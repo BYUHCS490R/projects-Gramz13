@@ -1,0 +1,10 @@
+main p {
+    color: rgb(220, 101, 26);
+    font-size: Larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header p {
+    color: brown;
+    background-color: rgb(31, 173, 119);
+    font-weight: bold;
+}
