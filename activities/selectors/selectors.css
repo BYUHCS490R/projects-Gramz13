@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main p {
+    color: cadetblue;
+    font-size: 15pt;
+}
+
+#second {
+    color: greenyellow;
+    font-weight: 1000;
+}
+
+.larger {
+    font-size: xx-large;
+    font-style: oblique;
+}
+.purple {
+    color: purple;
+}
+
+.separate {
+    color: red;
+    font-size: medium;
+}
