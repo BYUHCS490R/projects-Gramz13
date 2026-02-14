@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("2BG.jpg");
+    background-repeat: repeat;
+    color: #333;
+    
+}
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a.current {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+.decorative {
+   min-height: 80px;
+    background-image: url("compass5.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 20px;
+}
+
+
+.mylist {
+    list-style-image: url(world2.png);
+}
+
+.imagesize {
+    width: 600px;
+    height: 400px;
+}
+
+main p {
+    font-weight: bolder;
+}
