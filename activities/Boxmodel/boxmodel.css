@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+    background-color: rgb(208, 208, 233);
+    padding: 25px 25px 25px 25px;
+    margin: 10px 10px 10px 10px;
+}
+
+main {
+    background-color: rgb(98, 163, 163);
+}
+
+footer {
+    background-color:rgb(106, 141, 129);
+    border: 10px solid black;
+}
+
+nav a {
+    background-color: none;
+    margin-right: 15px;
+    text-decoration: underline;
+
+
+}
+
+.mainpic {
+    background-color: rgb(128, 80, 18);
+    padding: 20px;
+    width: 600px;
+    margin: 50px 25px 25px 50px;
+
+}
+
+
