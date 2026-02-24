@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Register for Elevate Basketball Training programs.">
+<meta name="keywords" content="basketball registration form">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elevate Basketball Training | Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Elevate Basketball Training</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="basic.html">Basic Skills</a>
+    <a href="intermediate.html">Intermediate</a>
+    <a href="advanced.html">Advanced</a>
+    <a href="programs.html">Programs</a>
+    <a href="register.html" class="active">Register</a>
+</nav>
+
+<div class="container">
+
+<section>
+<h2>Register for Training</h2>
+
+<form id="trainingForm">
+
+<label for="name">Full Name</label>
+<input type="text" id="name" required>
+
+<label for="email">Email Address</label>
+<input type="email" id="email" required>
+
+<label for="level">Skill Level</label>
+<select id="level" required>
+<option value="">Select Level</option>
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+</select>
+
+<label for="goals">Training Goals</label>
+<textarea id="goals" rows="4" required></textarea>
+
+<button type="submit">Submit Registration</button>
+
+</form>
+
+<div id="confirmation"></div>
+
+</section>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Elevate Basketball Training</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

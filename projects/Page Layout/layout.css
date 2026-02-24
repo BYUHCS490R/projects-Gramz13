@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #100f0f;
+  
+}
+
+header {
+    height: 150px;
+    padding: 30px;
+    text-align: center;
+    background-image: url(lebron-james-dunk-317.jpg);
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: border-box;
+    color: gold;
+}
+
+nav {
+    background-color: #6F263D;
+    border-top: 5px solid gold;
+    border-bottom: 5px solid gold;
+    padding: 18px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gold;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #6f1d1b;
+    text-shadow: 2px 2px 4px #ffffff;
+    background-color: white;
+}
+
+
+
+main p {
+    background-color: #552583; 
+    color: gold; 
+    width: 70%;
+    margin: 25px auto;
+    padding: 50px;
+    border: 3px solid #6f1d1b;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 900px; 
+    margin: 50px auto;
+    padding: 0;
+    background-color: #0d0d0d;
+    border: 3px solid;
+    border-image: linear-gradient(to right, #6F263D, gold) 1;
+    border-radius: 14px;
+    box-shadow: 0 20px 50px purple;
+    overflow: hidden;
+}
+
+header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 44px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 10px purple;
+    margin: 0;
+}
+
+
+main {
+    padding: 50px;
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+}
+
+figure {
+    width: 350px;
+    margin: 0 35px 25px 0;
+    float: left;
+    
+}
+
+figure img {
+    width: 100%;
+    border: 5px solid #6F263D;
+    border-radius: 14px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 10px;
+    color: gold;
+
+}
+
+
+footer {
+    clear: both;
+    height: 70px;
+    padding: 20px;
+    background: linear-gradient(to right, #6F263D, #8B1E3F);
+    color: gold;
+    text-align: center;
+    font-weight: bold;
+}
+
+main h2 {
+    color: gold;
+}

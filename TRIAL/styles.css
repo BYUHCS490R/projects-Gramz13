@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    width: 850px;
+    margin: 0 auto; /* Centers the page */
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+header {
+    background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+    background-size: cover;
+    background-origin: content-box;
+    background-clip: padding-box;
+    padding: 40px;
+    height: 150px;
+    text-align: center;
+    color: white;
+    border-bottom: 5px solid #0077b6;
+}
+
+
+header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+nav {
+    background-color: #0077b6;
+    padding: 15px;
+    text-align: center;
+}
+
+
+nav a:hover {
+    color: yellow;
+    text-shadow: 1px 1px 3px black;
+}
+
+main {
+    padding: 30px;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: justify;
+}
+
+main p {
+    margin-bottom: 20px;
+    font-style: normal;
+}
+
+.float-image {
+    float: right;
+    width: 300px;
+    margin: 0 0 15px 20px;
+    border: 3px solid #0077b6;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.float-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.float-image figcaption {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+footer {
+    background-image: url("https://images.unsplash.com/photo-1493558103817-58b2924bce98");
+    background-size: cover;
+    background-origin: border-box;
+    background-clip: content-box;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    border-top: 5px solid #0077b6;
+}
