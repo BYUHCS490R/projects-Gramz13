@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2ft 5fr 1fr;
+    grid-template-areas: "header header header" 
+                        "side main main"
+                        "footer footer footer";
+                        
+}
+
+.card {
+    background-color: maroon;
+    color: white;
+    margin: 3px;
+    padding: 10px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid;
+    border-radius: 5px;
+}
+
+ol {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: solid;
+    border-radius: 20px;
+}
+
+ul {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: solid;
+    border-radius: 20px;
+}
+
+header {
+    text-align: center;
+    border-bottom: solid;
+    grid-area: header;
+}
+
+nav {
+    grid-area: side;
+}
+
+nav a {
+    margin-left: 5px;
+}
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: main;
+}
