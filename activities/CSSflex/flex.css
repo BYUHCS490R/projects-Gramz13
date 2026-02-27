@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a {
+    display: block;
+    padding: 5px;
+    background-color: cadetblue;
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    background-color: aliceblue;
+    margin: 3px;
+    border: thin solid black;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+#parent {
+    display: flex;
+    flex-flow: row wrap;
+    /*flex-wrap: wrap;
+    flex-direction: row;*/
+    gap: 5px;
+   
+}
+.highlight {
+    order: -1;
+}
