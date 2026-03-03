@@ -1,0 +1,129 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+}
+
+
+
+header {
+    text-align: center;
+    background-color: goldenrod;
+    padding: 15px;
+    border: 3px solid black;
+    border-bottom: none;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: purple;
+    border: 3px solid black;
+    border-top: none;
+}
+
+nav a {
+    display: block; 
+    padding: 12px;
+    color: goldenrod;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav a:hover {
+    background-color: goldenrod;
+    color: purple;
+}
+
+
+
+.layout {
+    display: flex;
+}
+
+
+aside {
+    width: 250px;
+    background-color: goldenrod;
+    padding: 20px;
+    border-right: 3px solid black;
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+
+
+#parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+.card {
+    background-color: goldenrod;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 220px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+
+.card img {
+    width: 100%;
+    height: 60%;
+    display: block;
+}
+
+
+.card h3 {
+    margin: 10px;
+}
+
+.card p {
+    margin: 10px;
+}
+
+
+
+footer {
+    border-top: 3px solid black;
+    padding: 20px;
+}
+
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.footer-grid a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-grid a:hover {
+    text-decoration: underline;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+body main {
+    background-color: black;
+}
