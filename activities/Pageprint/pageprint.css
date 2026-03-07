@@ -2,6 +2,8 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     margin-top: 100px;
+    
+
 }
 
 .cardfig img {
@@ -12,8 +14,9 @@ body {
 .card {
     border: thin solid black;
     width: 300px;
-    box-shadow: 5px 5px 3px grey;
+    box-shadow: 5px 5px 3px black;
     border-radius: 5px;
+    background-color: whitesmoke;
 }
 
 .cardfig {
@@ -36,18 +39,20 @@ body {
 }
 header {
     background-color: goldenrod;
-    top: 0;
+    top: 0; 
     position: fixed;
     width: 100%;
-
+    margin: 0;
+  
 }
 
 header h1 {
     margin: 0;
+    text-align: center;
 }
 
 nav {
-    background-color: grey;
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
     color: black;
@@ -64,12 +69,13 @@ nav a {
     display: block;
     padding: 3px;
     text-decoration: none;
+    color: black;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px
+    gap: 15px;
 }
 
 @media ONLY print {
@@ -80,3 +86,48 @@ nav a {
         display: none;
     }
 }
+
+.sidebar {
+    width: 200px;
+}
+
+@media ONLY screen AND (max-width: 600px) {
+    body {
+        background-color: black;
+    }
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: thin solid black;
+    }
+
+    .main-row {
+        flex-direction: column-reverse;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .row {
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        box-shadow: 5px 5px 3px goldenrod;
+        border-radius: 5px;
+    }
+    footer {
+        color: white;
+    }
+    
+    li {
+        color: white;
+    }
+
+    ol li {
+        padding: 15px;
+    }
+}
+
