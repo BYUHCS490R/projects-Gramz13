@@ -1,3 +1,39 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
+.schedule {
+    /*border: 1px solid black; */
+    caption-side: bottom;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+
+/*.schedule td, .schedule th {
+    border: 1px solid black;
+    padding: 5px;
+}*/
+
+.schedule thead, .schedule tfoot {
+    background-color: goldenrod;
+    color: antiquewhite;
+}
+
+.schedule td {
+    border-bottom: 1px solid whitesmoke;
+    vertical-align: center;
+
+}
+
+.schedule tbody tr:nth-of-type(odd) {
+    background-color:  whitesmoke;
+}
+
+.intro::first-letter {
+    font-size: large;
+    color: red;
+    font-weight: bold;
+}
