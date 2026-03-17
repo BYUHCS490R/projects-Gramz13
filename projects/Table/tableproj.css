@@ -1,0 +1,126 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    background-color: #6F263D;
+    border-top: 5px solid gold;
+    border-bottom: 5px solid gold;
+    padding: 18px 0;
+    text-align: center;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 5px;
+    border: 2px solid gold;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to right, gold, #f7d046);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+    transform: scaleX(1.05);
+}
+
+
+header {
+    height: 50px;
+    padding: 30px;
+    text-align: center;
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: border-box;
+    color: gold;
+    background-color: maroon;
+}
+
+
+.stats {
+    /*border: 1px solid black; */
+    caption-side: top;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.stats thead, .stats tfoot {
+    background-color: goldenrod;
+    color: antiquewhite;
+}
+
+.stats td {
+    border-bottom: 1px solid whitesmoke;
+    vertical-align: middle;
+}
+
+.stats tbody tr:nth-of-type(odd) {
+    background-color:  whitesmoke;
+}
+
+.stats th, .stats td {
+    padding: 10px;
+    margin: auto;
+
+}
+
+.right {
+    display: flex;
+    max-width: 1100px;
+    margin: 20px auto;
+    gap: 20px;
+    width: 95%;
+    flex-wrap: wrap;
+
+}
+
+main {
+    flex: 3 1 600px;
+    min-width: 300px;
+
+}
+
+main h2 {
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+}
+
+.sidebar {
+    flex: 1 1 200px;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-left: 4px solid gold;
+    min-width: 150px;
+}
+
+
+
+.stats tbody tr:hover {
+    background-color: #f7e7a1;
+}
+
+.stats caption {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    color: maroon;
+}
