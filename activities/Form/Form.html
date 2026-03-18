@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <header>
+        <h1>Gerald's Web Design</h1>
+    </header>
+    <main>
+        <form action="formprocs.html" method="post"> 
+            <div>
+                <label for="fname">Name:</label>
+                <input type="text" name="fullname" id="fname"required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="name@email.com">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="pass" id="password" required>
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank">------</option>
+                    <option value="CA">California</option>
+                    <option value="HI"selected>Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+                <div>
+                    Gender:
+                    <label> <input type="radio" name="gender" value="Male">Male</label>
+                    <label> <input type="radio" name="gender" value="Female" checked>Female</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="remember" value="male" checked>Remember me?</label>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Sign up">
+            </div>
+        
+        </form>
+        <ol>
+            <li>The form tag has an "action" attribute. What does it do?</li>
+            <li>The form tag has a "method" attribute. What does it do?</li>
+            <li>What is the difference between a "POST" and a "GET"?</li>
+        </ol>
+        <ul>
+            <li>The action attribute in a form tag specifies the URL where the form data is sent when the form is submitted.</li>
+            <li>The method attribute defines how the form data is sent to the server, usually using GET or POST.</li>
+            <li>The difference is that GET sends data in the URL while POST sends data in the request body.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 20206. Gerald's Web Design</p>
+    </footer>
+</body>
+</html>
