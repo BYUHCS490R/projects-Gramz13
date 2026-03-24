@@ -1,0 +1,102 @@
+header {
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+.form-row, .check-row {
+        display: flex;
+        gap: 10px;
+        margin: 10px 0;
+        align-items: center ;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;  
+}
+
+fieldset {
+    box-shadow: 5px 5px 3px rgba(200,200,200,50%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.check-row label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+legend {
+    padding: 10px;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+input:not([type='submit']), select, textarea {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 3px;
+    background-color: #dddcdc;
+}
+
+input[type='submit'] {
+    padding: 10px;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgba(200,200,200,50%);
+}
+
+input:not([type='submit']):focus, select:focus, textarea:focus {
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+        width: 100%;
+    }
+
+    .spacer {
+        text-align: left;
+    }
+
+    input[type='submit'] {
+    width: 100%;
+    font-size: 1.2em;
+    }
+}
