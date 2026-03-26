@@ -9,7 +9,7 @@
 <body>
     <header><h1>Forms</h1></header>
     <main>
-        <form action="processing.html" method="post">
+        <form id="myform" action="processing.html" method="post">
             <fieldset>
                 <legend>Sign up</legend>
             <div class="form-row">
@@ -64,8 +64,51 @@
         </form>
      
     </main>
+
+        <ol>
+            <li>What is JavaScript? How did it get its name?</li>
+            <li>What are the two ways you can run JavaScript?</li>
+            <li>What was the most popular front-end js library?</li>
+            <li>What is the most popular front-end js library today?</li>
+        </ol>
+        <ul>
+            <li>JavaScript is a programming language used to make web pages interactive.</li>
+            <li>It got its name from Java for marketing reasons, even though it is not the same as Java.</li>
+            <li>You can run JavaScript in a web browser or on a server using Node.js.</li>
+            <li>The most popular front-end JavaScript library in the past was jQuery. Today it is React.</li>
+        </ul>
     <footer>
         <p>&copy; 2026. Gerald's Web Design</p>
     </footer>
+    <script>
+        document.getElementById("myform").addEventListener('submit',function(event) {
+            event.preventDefault();
+
+            //alert("Form Submitted");
+
+            const fullname = document.getElementById("firstNameInput").value;
+            const email = document.getElementById("emailInput").value;
+            const password = document.getElementById("password").value;
+            const age = document.getElementById("age").value;
+
+
+            if (!fullname || !email) {
+                alert(" You need a name and email.");
+            }
+            if (!age || age <18) {
+                alert("You need to be 18.");
+                return;
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            };
+
+            console.log(formDate);
+        });
+    </script>
 </body>
 </html>
