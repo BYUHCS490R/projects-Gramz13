@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header><h1>Forms</h1></header>
+    <header><h1>Forms</h1>
+    </header>
     <main>
-        <form id="myform" action="processing.html" method="post">
+        <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign up</legend>
             <div class="form-row">
@@ -24,6 +25,12 @@
                 <label for="dateInput">Birthdate: </label>
                 <input type="date" name="birthdate" id="dateInput">
             </div>
+
+            <div class="form-row">
+                <label for="age">Age: </label>
+                <input type="number" id="age" name="age">
+            </div>
+
             <div class="form-row">
                 <label for="password">Password: </label>
                 <input type="password" name="password" id="password" required>
@@ -70,33 +77,38 @@
             <li>What are the two ways you can run JavaScript?</li>
             <li>What was the most popular front-end js library?</li>
             <li>What is the most popular front-end js library today?</li>
+            <li>What is AJAX?</li>
+            <li>Why do you put your JS Code in a separate file?</li>
         </ol>
         <ul>
             <li>JavaScript is a programming language used to make web pages interactive.</li>
             <li>It got its name from Java for marketing reasons, even though it is not the same as Java.</li>
             <li>You can run JavaScript in a web browser or on a server using Node.js.</li>
             <li>The most popular front-end JavaScript library in the past was jQuery. Today it is React.</li>
+            <li>AJAX is a way for a web page to get or send data from a server without reloading the page.</li>
+            <li>To keep the code organized, easy to read, and usable on multiple pages.</li>
         </ul>
     <footer>
         <p>&copy; 2026. Gerald's Web Design</p>
     </footer>
-    <script>
-        document.getElementById("myform").addEventListener('submit',function(event) {
+        <script>
+        document.getElementById("myForm").addEventListener('submit', function(event) {
+            
             event.preventDefault();
-
-            //alert("Form Submitted");
 
             const fullname = document.getElementById("firstNameInput").value;
             const email = document.getElementById("emailInput").value;
             const password = document.getElementById("password").value;
             const age = document.getElementById("age").value;
 
-
+            
             if (!fullname || !email) {
-                alert(" You need a name and email.");
+                alert("You need a name and email.");
+                return;
             }
-            if (!age || age <18) {
-                alert("You need to be 18.");
+
+            if (!age || age < 18) {
+                alert("You must be at least 18 years old.");
                 return;
             }
 
@@ -107,8 +119,9 @@
                 age: age
             };
 
-            console.log(formDate);
-        });
+            console.log("Form Data Collected:", formData);
+            alert("Success! Check the console for data.");
+        }); 
     </script>
 </body>
 </html>
