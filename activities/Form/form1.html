@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form1.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+
+    <main>
+        <div id="message"></div>
+        <form action="processing.html" method="post" id="myForm">
+            First Name: <input type="text" id="firstName" name="first" placeholder="First Name"><br>
+
+           
+            Last Name: <input type="text" id="lastName" name="last" placeholder="Last Name"><br>
+
+            Password: <input type="password" name="pass" id="password"><br>
+
+            <input type="checkbox" name="remember" checked id="remember"> Remember Me <br>
+
+            Age: <input type="number" name="age" id="age"><br>
+
+            Class:
+           
+            <input type="radio" name="class" value="freshman"> Freshman<br>
+            <input type="radio" name="class" value="sophomore"> Sophomore<br>
+            <input type="radio" name="class" value="junior"> Junior<br>
+            <input type="radio" name="class" value="senior"> Senior <br>
+
+            State:
+            <select name="state" id="state">
+                <option value="blank" disabled selected>Make Selection</option>
+                <option value="hi">Hawaii</option>
+                <option value="ca">California</option>
+                <option value="co">Colorado</option>
+                <option value="ut">Utah</option>
+            </select><br>
+
+            <input type="submit">
+        </form>
+    </main>
+        <h2>Questions</h2>
+        <ol>
+            <li>What is AJAX?</li>
+            <li>Why do you put your JS Code in a separate file?</li>
+        </ol>
+        <ul>
+            <li>AJAX is a way for a web page to get or send data from a server without reloading the page.</li>
+            <li>To keep the code organized, easy to read, and usable on multiple pages.</li>
+        </ul>
+    
+    <footer>
+        <p>&copy; 2026 Gerald Ramirez</p>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+</html>
