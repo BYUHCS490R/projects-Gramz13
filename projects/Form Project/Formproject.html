@@ -38,8 +38,8 @@
                 
             <div class="check-row">
                 <div class="spacer">Gender:</div>
-                <label><input type="radio" name="gender" value="male"> Male</label>
-                <label><input type="radio" name="gender" value="female" checked> Female</label>
+                <label for="male"><input type="radio" name="gender" value="male" id="male"> Male</label>
+                <label for="female"><input type="radio" name="gender" value="female" id="female" checked> Female</label>
             </div>
 
             <div class="check-row">
@@ -71,57 +71,8 @@
         </form>
      
     </main>
-
-        <ol>
-            <li>What is JavaScript? How did it get its name?</li>
-            <li>What are the two ways you can run JavaScript?</li>
-            <li>What was the most popular front-end js library?</li>
-            <li>What is the most popular front-end js library today?</li>
-            <li>What is AJAX?</li>
-            <li>Why do you put your JS Code in a separate file?</li>
-        </ol>
-        <ul>
-            <li>JavaScript is a programming language used to make web pages interactive.</li>
-            <li>It got its name from Java for marketing reasons, even though it is not the same as Java.</li>
-            <li>You can run JavaScript in a web browser or on a server using Node.js.</li>
-            <li>The most popular front-end JavaScript library in the past was jQuery. Today it is React.</li>
-            <li>AJAX is a way for a web page to get or send data from a server without reloading the page.</li>
-            <li>To keep the code organized, easy to read, and usable on multiple pages.</li>
-        </ul>
     <footer>
         <p>&copy; 2026. Gerald's Web Design</p>
     </footer>
-        <script>
-        document.getElementById("myForm").addEventListener('submit', function(event) {
-            
-            event.preventDefault();
-
-            const fullname = document.getElementById("firstNameInput").value;
-            const email = document.getElementById("emailInput").value;
-            const password = document.getElementById("password").value;
-            const age = document.getElementById("age").value;
-
-            
-            if (!fullname || !email) {
-                alert("You need a name and email.");
-                return;
-            }
-
-            if (!age || age < 18) {
-                alert("You must be at least 18 years old.");
-                return;
-            }
-
-            const formData = {
-                name: fullname,
-                email: email,
-                password: password,
-                age: age
-            };
-
-            console.log("Form Data Collected:", formData);
-            alert("Success! Check the console for data.");
-        }); 
-    </script>
 </body>
 </html>
