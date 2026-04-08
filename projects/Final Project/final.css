@@ -1,0 +1,309 @@
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+header {
+    background-color: maroon;
+    color: white;
+    padding: 1px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  
+}
+
+nav {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    position: fixed;
+    top: 60px;  
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: goldenrod;
+
+}
+
+nav a.current {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 100px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(84, 83, 83, 0.1);
+    margin-top: 30px;
+}
+
+form, form input, form textarea, form select, form button, form label {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+
+button {
+    padding: 12px 20px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+button:hover {
+    background-color: black;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f1f1f1;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+
+#responseMessage {
+    font-size: 20px;
+    color: #0fbe18; 
+}
+
+
+.hero {
+    background-image: url(1basketball.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hero-text {
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+.stats {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.stats {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.stats caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.stats th, .stats td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.stats thead {
+    background-color: maroon;
+    color: white;
+}
+
+.stats tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.stats tbody tr:hover {
+    background-color: #ffe082;
+}
+
+.stats tfoot {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media only print {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    nav {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        padding: 12px 20px;
+        width: 90%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    
+    .hero {
+        height: 200px;
+    }
+    .hero-text {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    
+    .gallery {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .gallery img {
+        width: 80%;
+    }
+
+    
+    .stats {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+   
+    form div {
+        width: 90%;
+        margin: 0 auto 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea,
+    select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    button[type="submit"], button {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    
+    main {
+        padding: 300px 20px;
+        margin-top: 100px;
+    }
+}
+
+
+main h2 {
+    text-align: center;
+
+}

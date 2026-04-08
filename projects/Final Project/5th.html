@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodigy Ballers Elite | Sign up</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+    <header>
+        <h1>SIGN UP</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="1stpage.html">Beginner</a>
+        <a href="2nd.html">Intermediate</a>
+        <a href="3rd.html">Advanced</a>
+        <a href="4th.html">For Teams</a>
+        <a href="5th.html" class="current">Sign up</a>
+    </nav>
+
+    <main>
+        <form id="myForm">
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div>
+                <label for="position">Playing Position:</label>
+                <input type="text" id="position" name="position" placeholder="Enter your playing position" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your valid email address" required>
+            </div>
+
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div>
+                <label for="hometown">Hometown:</label>
+                <input type="text" id="hometown" name="hometown" placeholder="Enter your hometown" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <div id="responseMessage" style="margin-top:20px; font-weight:bold;"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gerald Ramirez</p>
+    </footer>
+
+    <script src="formfinal.js"></script>
+</body>
+</html>
