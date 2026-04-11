@@ -30,7 +30,7 @@ nav {
     width: 100%;
     z-index: 1000;
     border-radius: 3px 3px 3px 3px;
-    padding: 10px;
+    padding: 5px;
 }
 
 nav a {
@@ -39,30 +39,35 @@ nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: x-large;
 }
 
 nav a:hover {
     text-decoration:none;
-    background-color: goldenrod;
-
+    background-color: goldenrod
+    
 }
 
 nav a.current {
     color: blue;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
 
 }
 
 main {
-    max-width: 600px;
-    margin: 30px auto;
+    max-width: 1200px;
+    margin: 120px auto 0 auto;
+    padding: 30px;
     background-color: white;
-    padding: 100px 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(84, 83, 83, 0.1);
-    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+main p {
+    font-size: x-large;
+}
+
 
 form, form input, form textarea, form select, form button, form label {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -80,6 +85,7 @@ form div {
 label {
     font-weight: bold;
     margin-bottom: 5px;
+    font-size: larger;
 }
 
 
@@ -120,9 +126,15 @@ button:hover {
 footer {
     text-align: center;
     padding: 15px 0;
-    background-color: #f1f1f1;
+    background-color: maroon;
     margin-top: 30px;
-    font-size: 14px;
+    font-size: large;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -170,13 +182,13 @@ footer {
 
 .gallery {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     margin-top: 20px;
 }
 
 .gallery img {
-    width: 30%;
+    width: 100%;
     border-radius: 10px;
     transition: transform 0.3s;
 }
@@ -203,7 +215,7 @@ footer {
 .stats caption {
     font-weight: bold;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: x-large;
 }
 
 .stats th, .stats td {
@@ -213,7 +225,7 @@ footer {
 }
 
 .stats thead {
-    background-color: maroon;
+    background-color: goldenrod;
     color: white;
 }
 
@@ -222,7 +234,7 @@ footer {
 }
 
 .stats tbody tr:hover {
-    background-color: #ffe082;
+    background-color: goldenrod;
 }
 
 .stats tfoot {
@@ -248,6 +260,9 @@ footer {
     nav {
         flex-direction: column;
         align-items: center;
+        position: fixed;
+        top: 80px;
+        
     }
     nav a {
         padding: 12px 20px;
@@ -303,19 +318,42 @@ footer {
 
     
     main {
-        padding: 300px 20px;
-        margin-top: 100px;
+        padding:20px;
+        margin-top: 400px;
+    }
+
+    .body2 main {
+        margin-top: 400px;
+        padding: 15px;
+    }
+
+
+    .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    }
+
+    .card {
+    background-color: goldenrod;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
     }
 }
 
 
 main h2 {
     text-align: center;
+    font-size:xx-large;
 
 }
 
 .main1 {
     max-width: 100%;
+   
 }
 
 .links a {
@@ -326,7 +364,7 @@ main h2 {
 .main2 {
     max-width: 800px;
     font-size: larger;
-    
+
 }
 
 .basic h2 {
@@ -339,8 +377,85 @@ iframe {
     display: block;
     margin: 20px auto;
     background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3) ;
 }
 
 .black {
     background-color: whitesmoke;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
+
+.black iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+     
+}
+
+.card {
+    background-color: goldenrod;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 600px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    
+}
+
+
+.card img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+
+.card h3 {
+    margin: 10px;
+}
+
+.card p {
+    margin: 10px;
+    text-align: center;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.beginner a {
+    text-decoration: underline;
+    color: black;
+    font-size: x-large;
+
+}
+.beginner p {
+    
+    font-size: x-large;
+}
+
+
+.signup {
+    max-width: 600px;
+}
+
+.intermediate a {
+    text-decoration: underline;
+    color: black;
+    font-size: x-large;
+}
+
