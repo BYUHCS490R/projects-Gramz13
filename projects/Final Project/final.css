@@ -305,6 +305,8 @@ footer a {
         width: 100%;
         box-sizing: border-box;
     }
+
+    
     button[type="submit"], button {
         width: 100%;
         font-size: 1.2em;
